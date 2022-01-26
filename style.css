@@ -49,22 +49,23 @@ body {
 }
 
 #root {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 62px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
 }
+
 
 .card {
     width: 290px;
     height: 416px;
     padding: 27px;
-    justify-content: center;
-    align-items: center;
-
     background-color: #fff;
 }
 
@@ -107,6 +108,8 @@ span {
 @media only screen and (max-width: 460px) {
     #root {
         flex-direction: column;
+        top:20px;
+        transform: translateX(-50%);
     }
 
 }
