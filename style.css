@@ -96,6 +96,14 @@ span {
     padding-top: 20px;
 }
 
+.space::first-letter {
+    padding-left: 4px;
+}
+
+.space {
+    padding-top: 0px;
+}
+
 @media only screen and (max-width: 460px) {
     #root {
         flex-direction: column;
